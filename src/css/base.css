@@ -1,44 +1,44 @@
 body {
   font-size: 16px;
-  line-height: 1.5; /* Melhora a legibilidade */
-  color: #333; /* Cor de texto escuro */
+  line-height: 1.5;
+  color: #333; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; /* Maior ênfase nos títulos */
-  margin-bottom: 0.5rem; /* Espaçamento abaixo dos títulos */
+  font-weight: bold; 
+  margin-bottom: 0.5rem; 
 }
 
-* Consolidar body e html */
+/* Consolidar body e html */
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif; /* Fonte moderna */
+  font-family: 'Poppins', sans-serif; 
 }
 
 input, textarea, select, button {
-  font-family: inherit; /* fonte do corpo */
-  font-size: inherit; /* fonte consistente */
-  border: 1px solid #ccc; /* Borda clara */
-  border-radius: 4px; /* Bordas arredondadas */
-  padding: 8px 12px; /* Espacamento interno */
-  transition: border-color 0.3s ease; /* Suaviza a cor da borda ao interagir */
+  font-family: inherit; 
+  font-size: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  padding: 8px 12px; 
+  transition: border-color 0.3s ease;
 }
 
 ul, ol {
-  padding-left: 1.5rem; /* Espaçamento à esquerda */
+  padding-left: 1.5rem; 
 }
 
 li {
-  list-style: none; /* Remove os pontos */
-  margin-bottom: 0.5rem; /* espaçamento entre os itens */
+  list-style: none; 
+  margin-bottom: 0.5rem; 
 }
 
 .container {
   width: 100%;
-  max-width: 1200px; /* Largura máxima */
+  max-width: 1200px;
   margin: 0 auto; /* Centralizar conteúdo */
-  padding: 0 15px; /* Adiciona espaço nas laterais */
+  padding: 0 15px; 
 }
 
 .row {
@@ -56,22 +56,22 @@ li {
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 960px; /* Reduz a largura máxima */
+    max-width: 960px; 
   }
 }
 
 @media (max-width: 768px) {
   body {
-    font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+    font-size: 14px; 
   }
 
   .container {
-    padding: 0 10px; /* Menos espaço nas laterais */
+    padding: 0 10px; 
   }
 }
 
 a:focus, button:focus, input:focus {
-  outline: 3px solid #f39c12; /* Foco bem visível */
+  outline: 3px solid #f39c12; 
   outline-offset: 2px;
 }
 
@@ -80,8 +80,8 @@ a:focus, button:focus, input:focus {
 
 
 input:focus, textarea:focus, select:focus, button:focus {
-  border-color: #007bff; /* Cor de foco */
-  outline: none; /* Remove o outline padrão */
+  border-color: #007bff; 
+  outline: none; 
 }
 
 /* .form-control-dark consolidada */
@@ -160,13 +160,13 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 
 a {
-  text-decoration: none; /* Remover sublinhado */
+  text-decoration: none;
   color: inherit; 
   transition: color 0.3s ease;
 }
 
 a:hover,
 a:focus {
-  color: #007bff; /* Cor de hover */
+  color: #007bff; 
   outline: none; 
 }
