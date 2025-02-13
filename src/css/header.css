@@ -247,7 +247,7 @@
   padding: 0 20px;
   width: 100%;
   transition: all 0.3s ease-in-out;
-  margin-bottom: -5px !important;
+  margin-bottom: 20px; /* Espaçamento abaixo do header */
   padding-bottom: 0 !important;
 }
 
@@ -264,6 +264,7 @@
 
 /* Estilos para a localização e data */
 .location-date {
-  color: #ffffff; /* Texto branco */
-  font-size: 1em;
+  font-size: 0.8em; /* Texto menor */
+  margin-top: 2px; /* Menor espaçamento acima */
+  text-align: right; /* Alinhado à direita */
 }
