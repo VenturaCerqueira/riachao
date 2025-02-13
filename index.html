@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- Links adicionais de estilização -->
-    <link rel="stylesheet" href="../src/css/base.css">
+    <link rel="stylesheet" href="src/css/base.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
     <!-- Script para manipulação de temas (color modes) -->
@@ -24,20 +24,10 @@
 </head>
 
 <body>
-    <!-- Tela de Loading -->
-    <div id="loadingScreen">
-        <div class="loader-logo">
-            <img src="/src/img/icons/icon.ce7a0e735fa49a60bffd.png" alt="Carregando">
-            <div class="loader-ring"></div>
-        </div>
-        <p class="loading-text">Carregando...</p>
-    </div>
 
-    <div id="mainContent" class="hidden">
-        <!-- Containers para o Header e Footer carregados via JavaScript -->
-        <div id="header-container"></div>
-        <div id="footer-container"></div>
-    </div>
+    <!-- Containers para o Header e Footer carregados via JavaScript -->
+    <div id="header-container"></div>
+    <div id="footer-container"></div>
 
     <!-- Scripts de bibliotecas -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -48,7 +38,23 @@
         crossorigin="anonymous"></script>
 
     <!-- Script do seu site -->
-    <script src="../src/js/main.js"></script>
+    <script src="src/js/main.js"></script>
+
+    <script>
+        // Função para carregar conteúdo HTML dentro de um container
+        function loadComponent(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error("Erro ao carregar o componente:", error));
+        }
+
+        // Carregar o header e footer
+        loadComponent('src/components/header.html', 'header-container');
+        loadComponent('src/components/footer.html', 'footer-container');
+    </script>
 
 </body>
 

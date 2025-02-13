@@ -1,7 +1,7 @@
 // Função para carregar o conteúdo do header e footer
 document.addEventListener('DOMContentLoaded', function() {
     // Carrega o header
-    fetch('components/header.html')
+    fetch('src/components/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-container').innerHTML = data;
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Erro ao carregar o header:', error));
 
     // Carrega o footer
-    fetch('components/footer.html')
+    fetch('src/components/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-container').innerHTML = data;
@@ -62,13 +62,3 @@ updateDateTime();
 // Carregar o conteúdo do header e footer
 document.getElementById("header-container").innerHTML = fetch("../path/to/header.html").then(response => response.text());
 document.getElementById("footer-container").innerHTML = fetch("../path/to/footer.html").then(response => response.text());
-
-// Esconde o loading e exibe o conteúdo após 3 segundos
-setTimeout(() => {
-    document.getElementById('loadingScreen').classList.add('fade-out');
-
-    setTimeout(() => {
-        document.getElementById('mainContent').classList.add('show-content');
-    }, 500); // Pequeno delay para transição suave
-
-}, 3000); // Tempo de espera do loading (3 segundos)
