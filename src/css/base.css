@@ -171,7 +171,7 @@ body, html {
 .navbar .dropdown-menu {
   background-color: #007bff; /* Cor de fundo do dropdown */
   border: none; /* Sem borda */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 0 8px 16px rgb(253, 252, 252); /* Sombra */
   position: absolute;
   display: none; /* Inicialmente escondido */
   z-index: 1000;
