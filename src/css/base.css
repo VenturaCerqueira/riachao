@@ -142,14 +142,14 @@ body, html {
 
 /* Navbar */
 .navbar {
-  background: rgba(0, 123, 255, 0.9);
+  background: rgba(0, 123, 255, 0.9); /* Cor de fundo da navbar */
   padding: 12px 0;
   text-align: center;
   transition: background 0.3s ease-in-out;
 }
 
-.navbar li {
-  display: inline-block;
+.navbar .navbar-nav .nav-item {
+  position: relative; /* Necessário para o dropdown funcionar corretamente */
 }
 
 .navbar a {
@@ -166,6 +166,65 @@ body, html {
   color: #e6e6e6;
   border-bottom: 2px solid #ffffff;
 }
+
+/* Estilo do Dropdown */
+.navbar .dropdown-menu {
+  background-color: #007bff; /* Cor de fundo do dropdown */
+  border: none; /* Sem borda */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+  position: absolute;
+  display: none; /* Inicialmente escondido */
+  z-index: 1000;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block; /* Exibe ao passar o mouse */
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #0052cc; /* Cor de hover nos itens */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .navbar .dropdown-menu {
+    position: static; /* Para que o dropdown apareça corretamente em telas pequenas */
+    display: none;
+  }
+
+  .navbar .dropdown.active .dropdown-menu {
+    display: block; /* Exibe o dropdown ao clicar */
+  }
+}
+
+/* Para garantir que o dropdown funcione em telas pequenas */
+@media (max-width: 992px) {
+  .navbar .dropdown-menu {
+    position: static;
+    display: none;
+  }
+
+  .navbar .dropdown.active .dropdown-menu {
+    display: block;
+  }
+}
+
 
 /* Responsividade */
 @media (max-width: 768px) {
