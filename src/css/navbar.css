@@ -1,17 +1,23 @@
 /* Navbar */
 .navbar {
-  background: #007bff; /* Cor de fundo fixa da navbar */
-  padding: 10px 0;
+  background: rgba(0, 123, 255, 0.9); /* Cor de fundo da navbar */
+  padding: 12px 0;
   text-align: center;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adicionando borda sombra */
+}
+
+/* Efeito de borda-sombra mais forte ao rolar a página */
+.navbar.scrolled {
+  background: linear-gradient(135deg, #0052cc, #007bff);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao rolar */
 }
 
 /* Alinhamento dos itens */
 .navbar .navbar-nav {
   display: flex;
-  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -22,17 +28,24 @@
   margin: 0 15px;
 }
 
+/* Links da Navbar */
 .navbar a {
   text-decoration: none;
   color: white;
   font-size: 14px; /* Tamanho do texto igual ao da imagem */
-  font-weight: 600; 
-  text-transform: uppercase; 
-  letter-spacing: 1px; /* Adiciona espaçamento entre as letras */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   padding: 10px 15px;
   position: relative;
   transition: color 0.3s;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+/* Ícones ao lado do texto */
+.navbar a i {
+  margin-right: 8px;
 }
 
 /* Efeito de hover nos links */
@@ -59,7 +72,7 @@
 .navbar .dropdown-menu {
   background-color: #007bff;
   border: none;
-  box-shadow: 0 4px 8px rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
   position: absolute;
   top: 100%;
   left: 0;
@@ -79,8 +92,8 @@
   display: block;
   transition: background 0.3s;
   text-align: left;
-  font-size: 14px; /* Mantendo o tamanho do texto no dropdown */
-  letter-spacing: 1px; /* Mantendo o espaçamento */
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .navbar .dropdown-menu .dropdown-item:hover {
@@ -110,15 +123,4 @@
   .navbar .dropdown.active .dropdown-menu {
       display: block;
   }
-}
-
-/* Ajusta o espaçamento entre ícones e textos */
-.navbar a i {
-  margin-right: 8px;
-}
-
-/* Deixa os ícones alinhados corretamente */
-.navbar a {
-  display: flex;
-  align-items: center;
 }
