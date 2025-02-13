@@ -1,113 +1,124 @@
 /* Navbar */
 .navbar {
-    background: rgba(0, 123, 255, 0.9); /* Cor de fundo da navbar */
-    padding: 12px 0;
-    text-align: center;
-    transition: background 0.3s ease-in-out;
+  background: #007bff; /* Cor de fundo fixa da navbar */
+  padding: 10px 0;
+  text-align: center;
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+/* Alinhamento dos itens */
+.navbar .navbar-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo dos itens da navbar */
+.navbar .nav-item {
+  position: relative;
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px; /* Tamanho do texto igual ao da imagem */
+  font-weight: 600; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; /* Adiciona espaçamento entre as letras */
+  padding: 10px 15px;
+  position: relative;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+/* Efeito de hover nos links */
+.navbar a:hover {
+  color: #e6e6e6;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #fcfcfc;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Dropdown */
+.navbar .dropdown-menu {
+  background-color: #007bff;
+  border: none;
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  display: none;
+  z-index: 1000;
+  padding: 0;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: white;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s;
+  text-align: left;
+  font-size: 14px; /* Mantendo o tamanho do texto no dropdown */
+  letter-spacing: 1px; /* Mantendo o espaçamento */
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background: #0052cc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
   }
-  
-  .navbar .navbar-nav .nav-item {
-    position: relative; /* Necessário para o dropdown funcionar corretamente */
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px 15px;
-    position: relative;
-    transition: color 0.3s;
-  }
-  
-  .navbar a:hover {
-    color: #e6e6e6;
-    border-bottom: 2px solid #ffffff;
-  }
-  
-  /* Estilo do Dropdown */
-  .navbar .dropdown-menu {
-    background-color: #007bff; /* Cor de fundo do dropdown */
-    border: none; /* Sem borda */
-    box-shadow: 0 8px 16px rgb(253, 252, 252); /* Sombra */
-    position: absolute;
-    display: none; /* Inicialmente escondido */
-    z-index: 1000;
-  }
-  
-  .navbar .dropdown:hover .dropdown-menu {
-    display: block; /* Exibe ao passar o mouse */
-  }
-  
-  .navbar .dropdown-menu .dropdown-item {
-    color: white;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
-  }
-  
-  .navbar .dropdown-menu .dropdown-item:hover {
-    background-color: #0052cc; /* Cor de hover nos itens */
-  }
-  
-  /* Espaçamento entre os itens da navbar */
-  .navbar .navbar-nav .nav-item {
-    margin-left: 20px; /* Espaço entre os itens */
-    margin-right: 20px; /* Espaço entre os itens */
-  }
-  
-  /* Responsividade para telas pequenas */
-  @media (max-width: 768px) {
-    .navbar-nav {
-      display: flex;
+
+  .navbar-nav {
       flex-direction: column;
       text-align: center;
-    }
-  
-    .navbar-nav .nav-item {
-      margin-bottom: 10px; /* Espaço maior entre os itens em dispositivos móveis */
-    }
-  
-    .navbar-nav .nav-item:last-child {
-      margin-bottom: 0; /* Remove o espaço extra no último item */
-    }
-  
-    .navbar .dropdown-menu {
-      position: static; /* Para que o dropdown apareça corretamente em telas pequenas */
+  }
+
+  .navbar .nav-item {
+      margin: 5px 0;
+  }
+
+  .navbar .dropdown-menu {
+      position: static;
       display: none;
-    }
-  
-    .navbar .dropdown.active .dropdown-menu {
-      display: block; /* Exibe o dropdown ao clicar */
-    }
   }
-  
-  /* Navbar com efeito de sublinhado */
-  .navbar a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0%;
-    height: 2px;
-    background-color: #fcfcfc;
-    transition: width 0.3s ease-in-out;
+
+  .navbar .dropdown.active .dropdown-menu {
+      display: block;
   }
-  
-  .navbar a:hover::after {
-    width: 100%;
-  }
-  
-  /* Mudança de cor ao rolar */
-  .navbar.scrolled {
-    background: linear-gradient(135deg, #0052cc, #007bff);
-  }
-  
-  .navbar {
-    transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza movimento e sombra */
-  }
-  
-  .navbar.fixed-top {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
-    transform: translateY(0); /* Evita saltos no movimento vertical */
-  }
-  
+}
+
+/* Ajusta o espaçamento entre ícones e textos */
+.navbar a i {
+  margin-right: 8px;
+}
+
+/* Deixa os ícones alinhados corretamente */
+.navbar a {
+  display: flex;
+  align-items: center;
+}
