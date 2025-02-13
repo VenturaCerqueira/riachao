@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portal Contribuinte</title>
+
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Ícones do Bootstrap e FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Links adicionais de estilização -->
+    <link rel="stylesheet" href="../src/css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <!-- Script para manipulação de temas (color modes) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/color-modes.js"></script>
+</head>
+
+<body>
+    <!-- Tela de Loading -->
+    <div id="loadingScreen">
+        <div class="loader-logo">
+            <img src="img/icons/icon.ce7a0e735fa49a60bffd.png" alt="Carregando">
+            <div class="loader-ring"></div>
+        </div>
+        <p class="loading-text">Carregando...</p>
+    </div>
+
+    <div id="mainContent" class="hidden">
+        <!-- Containers para o Header e Footer carregados via JavaScript -->
+        <div id="header-container"></div>
+        <div id="footer-container"></div>
+    </div>
+
+    <!-- Scripts de bibliotecas -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- Script do seu site -->
+    <script src="../src/js/main.js"></script>
+
+</body>
+
+</html>
