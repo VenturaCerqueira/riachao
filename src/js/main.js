@@ -68,3 +68,18 @@ updateDateTime();
 document.getElementById("header-container").innerHTML = fetch("../path/to/header.html").then(response => response.text());
 document.getElementById("footer-container").innerHTML = fetch("../path/to/footer.html").then(response => response.text());
 
+// Função para alterar tamanho da fonte do body
+function changeFontSize(action) {
+    const body = document.body;
+    // Pega o tamanho de fonte atual do body (caso não definido, pega do CSS)
+    let currentSize = parseFloat(window.getComputedStyle(body).fontSize);
+
+    if (action === 'increase') {
+      body.style.fontSize = (currentSize + 1) + 'px';
+    } else if (action === 'decrease') {
+      body.style.fontSize = (currentSize - 1) + 'px';
+    } else if (action === 'reset') {
+      // Reseta para o valor padrão (removendo style inline)
+      body.style.fontSize = '';
+    }
+  }
