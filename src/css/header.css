@@ -1,7 +1,7 @@
 /* .custom-header */
 /* Estilos gerais do header */
 .custom-header {
-  background: linear-gradient(135deg, #0052cc, #007bff); /* Azul degradê */
+  background: linear-gradient(135deg, #0052cc, #007bff); 
   color: #f5f5f5;
   height: 120px;
   display: flex;
@@ -39,14 +39,14 @@
 
   /* Navbar */
   .navbar {
-    background: rgba(0, 123, 255, 0.9); /* Cor de fundo da navbar */
+    background: rgba(0, 123, 255, 0.9);
     padding: 12px 0;
     text-align: center;
     transition: background 0.3s ease-in-out;
   }
   
   .navbar .navbar-nav .nav-item {
-    position: relative; /* Necessário para o dropdown funcionar corretamente */
+    position: relative; 
   }
   
   .navbar a {
@@ -66,16 +66,16 @@
   
   /* Estilo do Dropdown */
   .navbar .dropdown-menu {
-    background-color: #007bff; /* Cor de fundo do dropdown */
-    border: none; /* Sem borda */
-    box-shadow: 0 8px 16px rgb(253, 252, 252); /* Sombra */
+    background-color: #007bff; 
+    border: none; 
+    box-shadow: 0 8px 16px rgb(253, 252, 252); 
     position: absolute;
-    display: none; /* Inicialmente escondido */
+    display: none; 
     z-index: 1000;
   }
   
   .navbar .dropdown:hover .dropdown-menu {
-    display: block; /* Exibe ao passar o mouse */
+    display: block;
   }
   
   .navbar .dropdown-menu .dropdown-item {
@@ -85,13 +85,13 @@
   }
   
   .navbar .dropdown-menu .dropdown-item:hover {
-    background-color: #0052cc; /* Cor de hover nos itens */
+    background-color: #0052cc; 
   }
   
-  /* Espaçamento entre os itens da navbar */
+ 
   .navbar .navbar-nav .nav-item {
-    margin-left: 20px; /* Espaço entre os itens */
-    margin-right: 20px; /* Espaço entre os itens */
+    margin-left: 20px; 
+    margin-right: 20px; 
   }
   
   /* Responsividade para telas pequenas */
@@ -103,11 +103,11 @@
     }
   
     .navbar-nav .nav-item {
-      margin-bottom: 15px; /* Espaço maior entre os itens em dispositivos móveis */
+      margin-bottom: 15px;
     }
   
     .navbar-nav .nav-item:last-child {
-      margin-bottom: 0; /* Remove o espaço extra no último item */
+      margin-bottom: 0; 
     }
   }
   
@@ -124,12 +124,12 @@
     }
   
     .navbar .dropdown-menu {
-      position: static; /* Para que o dropdown apareça corretamente em telas pequenas */
+      position: static; 
       display: none;
     }
   
     .navbar .dropdown.active .dropdown-menu {
-      display: block; /* Exibe o dropdown ao clicar */
+      display: block; 
     }
   }
   
@@ -159,7 +159,7 @@
     }
   }
   
-  /* Animação de fade-in */
+  
   @keyframes fadeIn {
     to {
       opacity: 1;
@@ -167,7 +167,7 @@
     }
   }
   
-  /* .header animação */
+ 
   .header {
     background: linear-gradient(135deg, #0052cc, #007bff);
     color: #f5f5f5;
@@ -180,7 +180,6 @@
     animation: fadeIn 1s ease-out forwards;
   }
   
-  /* .navbar com efeito de sublinhado */
   .navbar a::after {
     content: "";
     position: absolute;
@@ -196,41 +195,39 @@
     width: 100%;
   }
   
-  /* Mudança de cor ao rolar */
+
   .navbar.scrolled {
     background: linear-gradient(135deg, #0052cc, #007bff);
   }
   
   .navbar {
-    transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza movimento e sombra */
+    transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out; 
   }
   
   .navbar.fixed-top {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
-    transform: translateY(0); /* Evita saltos no movimento vertical */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transform: translateY(0); 
   }
   
   .top-accessibility-bar {
-    background-color: rgba(255, 255, 255, 0.3); /* Branco com 30% de opacidade */
-    color: #0052cc;           /* Texto azul, conforme o tema */
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #0052cc;           
     font-size: 14px;
-    border-bottom: 1px solid rgba(0, 82, 204, 0.3); /* Linha inferior com opacidade */
+    border-bottom: 1px solid rgba(0, 82, 204, 0.3); 
     opacity: 70%;
   }
   
-  
-  
-  /* Links na barra de acessibilidade */
+
   .top-accessibility-bar a {
-    color: #007bff; /* Mesma cor do texto, para manter a coerência */
+    color: #007bff; 
     transition: color 0.3s;
   }
   
   .top-accessibility-bar a:hover {
-    color: #007bff; /* Tom de azul mais claro no hover (opcional) */
+    color: #007bff; 
   }
   
-  /* Se quiser negrito para o texto "ACESSIBILIDADE" */
+
   .top-accessibility-bar .fw-bold {
     font-weight: 600; /* ou 700 */
   }
@@ -238,7 +235,7 @@
   /* .custom-header */
 /* Estilos gerais do header */
 .custom-header {
-  background: linear-gradient(135deg, #0052cc, #007bff); /* Azul degradê */
+  background: linear-gradient(135deg, #0052cc, #007bff);
   color: #f5f5f5;
   height: 120px;
   display: flex;
@@ -247,7 +244,7 @@
   padding: 0 20px;
   width: 100%;
   transition: all 0.3s ease-in-out;
-  margin-bottom: 20px; /* Espaçamento abaixo do header */
+  margin-bottom: 20px; 
   padding-bottom: 0 !important;
 }
 
@@ -262,28 +259,27 @@
   color: #e6e6e6;
 }
 
-/* Estilos para a localização e data */
 .location-date {
-  font-size: 0.8em; /* Texto menor */
-  margin-top: 2px; /* Menor espaçamento acima */
-  text-align: right; /* Alinhado à direita */
+  font-size: 0.8em; 
+  margin-top: 2px; 
+  text-align: right; 
 }
 
 /* .custom-header */
 /* Estilos gerais do header */
 .custom-header {
-  background: linear-gradient(135deg, #0052cc, #007bff); /* Azul degradê */
+  background: linear-gradient(135deg, #0052cc, #007bff); 
   color: #f5f5f5;
-  height: 160px; /* Ajuste a altura se necessário */
+  height: 160px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   width: 100%;
   transition: all 0.3s ease-in-out;
-  margin-bottom: 20px; /* Espaçamento abaixo do header */
+  margin-bottom: 20px; 
   padding-bottom: 0 !important;
-  text-transform: uppercase; /* Tudo em caixa alta */
+  text-transform: uppercase;
 }
 
 /* Título centralizado no header */
@@ -293,8 +289,8 @@
   margin: 0;
   text-align: center;
   padding: 0 20px;
-  text-transform: uppercase; /* Tudo em caixa alta */
-  position: absolute; /* Centralizado no meio do header */
+  text-transform: uppercase;
+  position: absolute; 
   left: 50%;
   transform: translateX(-50%);
 }
@@ -304,20 +300,19 @@
   text-decoration: none;
   color: #fff;
   transition: color 0.3s;
-  text-transform: uppercase; /* Tudo em caixa alta */
+  text-transform: uppercase;
 }
 
 .icon-container a:hover {
   color: #e6e6e6;
 }
 
-/* Estilos para a localização e data */
 .location-date {
-  font-size: 0.8em; /* Texto menor */
-  margin-top: 5px; /* Menor espaçamento acima */
-  text-align: right; /* Alinhado à direita */
-  text-transform: uppercase; /* Tudo em caixa alta */
-  white-space: nowrap; /* Impede quebra de linha */
+  font-size: 0.8em; 
+  margin-top: 5px; 
+  text-align: right; 
+  text-transform: uppercase; 
+  white-space: nowrap;
 }
 
 
@@ -329,8 +324,8 @@
   text-align: center;
   flex-grow: 1;
   padding: 0 20px;
-  text-transform: uppercase; /* Tudo em caixa alta */
-  position: absolute; /* Centralizado no meio do header */
+  text-transform: uppercase; 
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -340,35 +335,34 @@
   text-decoration: none;
   color: #fff;
   transition: color 0.3s;
-  text-transform: uppercase; /* Tudo em caixa alta */
+  text-transform: uppercase; 
 }
 
 .icon-container a:hover {
   color: #e6e6e6;
 }
 
-/* Estilos para a localização e data */
 .location-date {
-  font-size: 0.8em; /* Texto menor */
-  margin-top: 2px; /* Menor espaçamento acima */
-  text-align: right; /* Alinhado à direita */
-  text-transform: uppercase; /* Tudo em caixa alta */
+  font-size: 0.8em;
+  margin-top: 2px; 
+  text-align: right; 
+  text-transform: uppercase; 
 }
 
 /* .custom-header */
 /* Estilos gerais do header */
 .custom-header {
-  background: linear-gradient(135deg, #0052cc, #007bff); /* Azul degradê */
+  background: linear-gradient(135deg, #0052cc, #007bff); 
   color: #f5f5f5;
-  height: 160px; /* Aumentei a altura */
+  height: 160px; 
   display: flex;
-  flex-direction: column; /* Alinhar itens em coluna */
+  flex-direction: column; 
   align-items: center;
-  justify-content: center; /* Centralizar conteúdo */
-  padding: 10px 20px; /* Adicionei padding para evitar cortes */
+  justify-content: center; 
+  padding: 10px 20px; 
   width: 100%;
   transition: all 0.3s ease-in-out;
-  box-sizing: border-box; /* Inclui padding na altura total */
+  box-sizing: border-box; 
 }
 
 /* .custom-logo */
@@ -384,19 +378,19 @@
   margin-right: 10px;
 }
 
-/* Título centralizado no header */
+
 .header-title {
   font-size: 2.1Rem;
   color: #f5f5f5;
   margin: 0;
   text-align: center;
-  margin-top: 10px; /* Adicionar margem superior opcional */
+  margin-top: 10px; 
 }
 
-/* Estilos para a localização e data */
+
 .location-date {
   font-size: 0.8em;
-  text-align: center; /* Centralizar data */
-  text-transform: uppercase; /* Texto em caixa alta */
-  margin-top: 10px; /* Espaçamento superior */
+  text-align: center; 
+  text-transform: uppercase; 
+  margin-top: 10px;
 }
