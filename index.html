@@ -17,15 +17,13 @@
 
     <!-- Links adicionais de estilização -->
     <link rel="stylesheet" href="src/css/base.css">
-    <!-- Linkando os arquivos CSS -->
-    <link rel="stylesheet" href="src/css/base.css"> <!-- Arquivo CSS global -->
-
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/card.css">
     <link rel="stylesheet" href="src/css/navbar.css">
     <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/loading.css">
-    
+    <link rel="stylesheet" href="src/css/menu.css"> <!-- Novo arquivo CSS para o menu -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
     <!-- Script para manipulação de temas (color modes) -->
@@ -33,12 +31,11 @@
 </head>
 
 <body>
-
-
     <!-- Containers para o Header e Footer carregados via JavaScript -->
     <div id="header-container"></div>
-    <div id="navbar-container"></div> <!-- navbar  -->
-    <div id="card-container"></div> <!-- cards s -->
+    <div id="navbar-container"></div>
+    <div id="card-container"></div>
+    <div id="menu-container"></div>
     <div id="footer-container"></div>
 
     <!-- Scripts de bibliotecas -->
@@ -51,6 +48,7 @@
 
     <!-- Script do seu site -->
     <script src="src/js/main.js"></script>
+    <script src="src/js/menu.js"></script> <!-- Novo arquivo JavaScript para o menu -->
 
     <script>
         // Função para carregar conteúdo HTML dentro de um container
@@ -63,9 +61,11 @@
                 .catch(error => console.error("Erro ao carregar o componente:", error));
         }
 
-        // Carregar o header e footer
+        // Carregar o header, footer, navbar, card-menu e menu
         loadComponent('src/components/header.html', 'header-container');
         loadComponent('src/components/footer.html', 'footer-container');
+        loadComponent('src/components/navbar.html', 'navbar-container');
+        loadComponent('src/components/menu.html', 'menu-container');
     </script>
 
 </body>

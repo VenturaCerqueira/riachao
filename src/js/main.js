@@ -83,3 +83,20 @@ function changeFontSize(action) {
       body.style.fontSize = '';
     }
   }
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.button-card');
+    buttons.forEach((button, index) => {
+      setTimeout(() => {
+        button.classList.add('visible');
+      }, index * 100); // Atraso para cada botão
+    });
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const dateElement = document.getElementById('current-date');
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const currentDate = new Date().toLocaleDateString('pt-BR', options);
+    dateElement.textContent = currentDate;
+  });
+  
+  

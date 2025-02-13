@@ -1,0 +1,115 @@
+/* Estilos para o container de botões */
+.button-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #007bff; /* Fundo azul */
+  padding: 20px;
+}
+
+/* Estilos para as linhas de botões */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilos para os botões */
+.button-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff; /* Fundo branco dos botões */
+  border: 1px solid #0056b3; /* Borda azul menor */
+  border-radius: 10px;
+  width: 160px; /* Tamanho dos retângulos */
+  height: 80px; /* Tamanho dos retângulos */
+  text-decoration: none;
+  color: #0056b3; /* Texto azul */
+  text-align: center;
+  transition: background 0.3s, border 0.3s;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombreamento */
+}
+
+.button-card:hover {
+  background: #d0e4ff; /* Fundo azul mais escuro no hover */
+  border-color: #003d80; /* Borda mais escura no hover */
+}
+
+.button-card i {
+  font-size: 24px; /* Tamanho do ícone */
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.button-title {
+  margin: 0;
+  font-size: 0.9em;
+  flex-grow: 1; /* Para garantir que o texto use o espaço restante */
+}
+
+.top-accessibility-bar {
+  background-color: rgba(255, 255, 255, 0.3); /* Branco com 30% de opacidade */
+  color: #0052cc;           /* Texto azul, conforme o tema */
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 82, 204, 0.3); /* Linha inferior com opacidade */
+}
+/* Estilos para o container de botões */
+.button-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaçamento entre as linhas */
+  background-color: #007bff; /* Fundo azul */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+}
+
+/* Estilos para as linhas de botões */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilos para os botões */
+.button-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff; /* Fundo branco dos botões */
+  border: 1px solid #0056b3; /* Borda azul menor */
+  width: 160px; /* Tamanho dos retângulos */
+  height: 80px; /* Tamanho dos retângulos */
+  text-decoration: none;
+  color: #0056b3; /* Texto azul */
+  text-align: center;
+  transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+}
+
+.button-card:hover {
+  background: #d0e4ff; /* Fundo azul mais escuro no hover */
+  border-color: #003d80; /* Borda mais escura no hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombreamento mais intenso no hover */
+}
+
+.button-card i {
+  font-size: 24px; /* Tamanho do ícone */
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.button-title {
+  margin: 0;
+  font-size: 0.9em;
+  flex-grow: 1; /* Para garantir que o texto use o espaço restante */
+}
+
+/* Estilos para o container do card */
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+  background: #ffffff;
+}
