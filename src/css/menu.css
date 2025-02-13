@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: #007bff; /* Fundo azul */
+  background-color: #007bff; 
   padding: 20px;
 }
 
@@ -19,49 +19,49 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff; /* Fundo branco dos botões */
-  border: 1px solid #0056b3; /* Borda azul menor */
+  background: #ffffff; 
+  border: 1px solid #0056b3; 
   border-radius: 10px;
-  width: 160px; /* Tamanho dos retângulos */
-  height: 80px; /* Tamanho dos retângulos */
+  width: 160px; 
+  height: 80px; 
   text-decoration: none;
-  color: #0056b3; /* Texto azul */
+  color: #0056b3; 
   text-align: center;
   transition: background 0.3s, border 0.3s;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombreamento */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .button-card:hover {
-  background: #d0e4ff; /* Fundo azul mais escuro no hover */
-  border-color: #003d80; /* Borda mais escura no hover */
+  background: #d0e4ff; 
+  border-color: #003d80; 
 }
 
 .button-card i {
-  font-size: 24px; /* Tamanho do ícone */
-  margin-right: 10px; /* Espaço entre o ícone e o texto */
+  font-size: 24px; 
+  margin-right: 10px; 
 }
 
 .button-title {
   margin: 0;
   font-size: 0.9em;
-  flex-grow: 1; /* Para garantir que o texto use o espaço restante */
+  flex-grow: 1; 
 }
 
 .top-accessibility-bar {
-  background-color: rgba(255, 255, 255, 0.3); /* Branco com 30% de opacidade */
-  color: #0052cc;           /* Texto azul, conforme o tema */
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #0052cc;           
   font-size: 14px;
-  border-bottom: 1px solid rgba(0, 82, 204, 0.3); /* Linha inferior com opacidade */
+  border-bottom: 1px solid rgba(0, 82, 204, 0.3); 
 }
 /* Estilos para o container de botões */
 .button-grid-container {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Espaçamento entre as linhas */
-  background-color: #007bff; /* Fundo azul */
+  gap: 20px; 
+  background-color: #007bff; 
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 /* Estilos para as linhas de botões */
@@ -76,12 +76,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff; /* Fundo branco dos botões */
-  border: 1px solid #0056b3; /* Borda azul menor */
-  width: 160px; /* Tamanho dos retângulos */
-  height: 80px; /* Tamanho dos retângulos */
+  background: #ffffff; 
+  border: 1px solid #0056b3; 
+  width: 160px; 
+  height: 80px; 
   text-decoration: none;
-  color: #0056b3; /* Texto azul */
+  color: #0056b3;
   text-align: center;
   transition: background 0.3s, border 0.3s, box-shadow 0.3s;
   padding: 10px;
@@ -89,20 +89,20 @@
 }
 
 .button-card:hover {
-  background: #d0e4ff; /* Fundo azul mais escuro no hover */
-  border-color: #003d80; /* Borda mais escura no hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombreamento mais intenso no hover */
+  background: #d0e4ff; 
+  border-color: #003d80; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }
 
 .button-card i {
-  font-size: 24px; /* Tamanho do ícone */
-  margin-right: 10px; /* Espaço entre o ícone e o texto */
+  font-size: 24px; 
+  margin-right: 10px;
 }
 
 .button-title {
   margin: 0;
   font-size: 0.9em;
-  flex-grow: 1; /* Para garantir que o texto use o espaço restante */
+  flex-grow: 1;  
 }
 
 /* Estilos para o container do card */
@@ -110,6 +110,6 @@
   display: flex;
   justify-content: center;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   background: #ffffff;
 }
