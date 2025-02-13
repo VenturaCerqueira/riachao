@@ -1,20 +1,25 @@
-// Função para carregar o conteúdo do header e footer
-document.addEventListener('DOMContentLoaded', function() {
-    // Carrega o header
-    fetch('src/components/header.html')
+// Função para carregar componentes dinamicamente
+function loadComponent(url, elementId) {
+    return fetch(url)
         .then(response => response.text())
         .then(data => {
-            document.getElementById('header-container').innerHTML = data;
+            document.getElementById(elementId).innerHTML = data;
         })
-        .catch(error => console.error('Erro ao carregar o header:', error));
+        .catch(error => console.error("Erro ao carregar o componente:", error));
+}
 
-    // Carrega o footer
-    fetch('src/components/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-container').innerHTML = data;
-        })
-        .catch(error => console.error('Erro ao carregar o footer:', error));
+// Exibir o loading antes de carregar os componentes
+loadComponent('src/components/loading.html', 'loading-container').then(() => {
+    // Carregar os outros componentes
+    Promise.all([
+        loadComponent('src/components/navbar.html', 'navbar-container'),
+        loadComponent('src/components/header.html', 'header-container'),
+        loadComponent('src/components/card.html', 'card-container'),
+        loadComponent('src/components/footer.html', 'footer-container')
+    ]).then(() => {
+        // Esconder o loading após tudo carregar
+        document.getElementById('loading-container').style.display = 'none';
+    });
 });
 
 // Função para adicionar/remover classe 'fixed-top' com base no scroll
@@ -62,3 +67,4 @@ updateDateTime();
 // Carregar o conteúdo do header e footer
 document.getElementById("header-container").innerHTML = fetch("../path/to/header.html").then(response => response.text());
 document.getElementById("footer-container").innerHTML = fetch("../path/to/footer.html").then(response => response.text());
+
