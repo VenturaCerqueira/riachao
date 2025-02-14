@@ -92,11 +92,3 @@ function changeFontSize(action) {
     });
   });
   
-  document.addEventListener('DOMContentLoaded', function() {
-    const dateElement = document.getElementById('current-date');
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    const currentDate = new Date().toLocaleDateString('pt-BR', options);
-    dateElement.textContent = currentDate;
-  });
-  
-  
