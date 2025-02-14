@@ -128,50 +128,50 @@
 
 /* Botão Fixo "Acessar" */
 .fixed-button {
-  position: absolute; /* Alterar para absoluto para facilitar o arraste */
-  bottom: 100px; /* Distância da parte inferior da tela */
-  right: 20px; /* Distância da lateral direita da tela */
-  background: linear-gradient(135deg, #0052cc, #007bff); /* Azul degradê igual ao header */
+  position: absolute; 
+  bottom: 100px; 
+  right: 20px; 
+  background: linear-gradient(135deg, #0052cc, #007bff); 
   color: #f5f5f5;
   padding: 10px;
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  border-radius: 50%; /* Formato circular */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  z-index: 1000; /* Garantir que fique acima de outros elementos */
+  z-index: 1000; 
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px; /* Largura inicial para ícone */
-  height: 50px; /* Altura inicial para ícone */
-  overflow: hidden; /* Esconder texto */
-  white-space: nowrap; /* Impede quebra de linha */
+  width: 70px; 
+  height: 70px; 
+  overflow: hidden; 
+  white-space: nowrap; 
 }
 
 /* Texto do botão escondido */
 .fixed-button .button-text {
-  opacity: 0; /* Texto invisível por padrão */
-  margin-left: 10px; /* Espaço entre ícone e texto */
+  opacity: 0; 
+  margin-left: 10px; 
   transition: opacity 0.3s;
-  display: none; /* Esconder o texto inicialmente */
+  display: none;
 }
 
 /* Efeito de hover para mostrar o texto */
 .fixed-button:hover {
-  background: linear-gradient(135deg, #007bff, #0052cc); /* Inverte o degradê no hover */
-  transform: translateY(-3px); /* Levanta o botão no hover */
-  width: 160px; /* Aumenta a largura ao passar o mouse */
-  padding: 10px 20px; /* Ajusta padding ao passar o mouse */
-  border-radius: 25px; /* Mantém bordas arredondadas */
-  justify-content: flex-start; /* Alinha conteúdo à esquerda */
+  background: linear-gradient(135deg, #007bff, #0052cc); 
+  transform: translateY(-3px); 
+  width: 160px; 
+  padding: 10px 20px; 
+  border-radius: 25px; 
+  justify-content: flex-start; 
 }
 
 .fixed-button:hover .button-text {
-  opacity: 1; /* Texto visível ao passar o mouse */
-  display: inline; /* Mostra o texto ao passar o mouse */
+  opacity: 1; 
+  display: inline; 
 }
 
 .fixed-button i {
