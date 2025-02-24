@@ -90,6 +90,3 @@ Se você deseja contribuir com o projeto, siga os passos abaixo:
    ```
 5. Abra um Pull Request no repositório original.
 
----
-
-Espero que este README atenda às suas expectativas! Se precisar de mais alguma coisa, estou aqui para ajudar.
