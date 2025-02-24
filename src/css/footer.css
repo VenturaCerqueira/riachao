@@ -1,7 +1,5 @@
 /* .footer */
 .footer {
-    background: #212529; /* Cor de fundo do footer */
-    color: white;
     padding: 40px 20px;
     text-align: center;
     font-size: 14px;
@@ -17,7 +15,7 @@
     color: #007bff;
   }
   
-  /* Links de redes sociais */
+ 
   .footer .social-links {
     margin-top: 20px;
   }
